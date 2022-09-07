@@ -4,13 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style/style.css">
     <script src="./dist/bundle.js" defer></script>
     <title>VILED</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="container"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="navbar-wrapper  d-flex justify-content-between align-items-center">
+                            <div class="left-side col-md-5 d-flex justify-content-left align-items-center">
+                                <div class="language-wrapper">
+                                    <select name="language" id="language">
+                                        <option value="russian" selected="selected"></option>
+                                        <option value="english"></option>
+                                        <option value="kazakh"></option>
+                                    </select>
+                                </div>
+                                <div class="currency-wrapper">
+                                    <select name="currency" id="currency" value="">
+                                        <option value="ru" selected="selected">Россия, ₽</option>
+                                        <option value="kz">Казахстан, ₸</option>
+                                    </select>
+                                </div>
+                                <div class="categories">
+                                    <a href="/" class="women active">Женщины</a>
+                                    <a href="/" class="men">Мужчины</a>
+                                    <a href="/" class="kids">Дети</a>
+                                </div>
+                            </div>
+                            <div class="center col-md-2 d-flex justify-content-center align-items-center">
+                                <a href="/" class="logo "></a>
+                            </div>
+                                <div class="right-side col-md-5 d-flex justify-content-right align-items-center">
+                                    <div class="search">
+                                        <div class="search-wrapper">
+                                            <input class="search-wrapper_input" type="text" placeholder="Поиск"/>
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <span class="search-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_14_181)">
+                                                    <path d="M16.8457 14.8922L20.0527 18.0984L18.9932 19.1579L15.7869 15.9509C14.594 16.9073 13.1101 17.4274 11.5811 17.4253C7.86121 17.4253 4.84216 14.4062 4.84216 10.6863C4.84216 6.96643 7.86121 3.94739 11.5811 3.94739C15.301 3.94739 18.32 6.96643 18.32 10.6863C18.3222 12.2153 17.8021 13.6992 16.8457 14.8922ZM15.3437 14.3366C16.2939 13.3593 16.8246 12.0494 16.8225 10.6863C16.8225 7.79008 14.4766 5.44493 11.5811 5.44493C8.68485 5.44493 6.3397 7.79008 6.3397 10.6863C6.3397 13.5818 8.68485 15.9277 11.5811 15.9277C12.9442 15.9299 14.2541 15.3992 15.2314 14.4489L15.3437 14.3366Z" fill="black" stroke="white" stroke-width="0.2"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0_14_181">
+                                                    <rect width="17" height="17" fill="white" transform="translate(3.5 3.5)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                        </span>
+                                        <span class="user">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.4 20.4H16.975V18.881C16.975 18.2102 16.7076 17.567 16.2317 17.0929C15.7558 16.6187 15.1104 16.3524 14.4375 16.3524H9.5625C8.88963 16.3524 8.24425 16.6187 7.76835 17.0929C7.29243 17.567 7.025 18.2102 7.025 18.881V20.4H5.6V18.881C5.6 17.8341 6.01739 16.83 6.76046 16.0897C7.50354 15.3493 8.51146 14.9333 9.5625 14.9333H14.4375C15.4885 14.9333 16.4965 15.3493 17.2395 16.0897C17.9826 16.83 18.4 17.8341 18.4 18.881V20.4ZM12 13.1143C11.3729 13.1143 10.7519 12.9912 10.1726 12.7521C9.59321 12.513 9.06682 12.1626 8.62344 11.7208C8.18005 11.2791 7.82836 10.7546 7.58843 10.1775C7.34849 9.60037 7.225 8.98181 7.225 8.35714C7.225 7.73248 7.34849 7.11392 7.58843 6.53678C7.82836 5.95965 8.18005 5.43522 8.62344 4.99346C9.06682 4.55171 9.59321 4.20126 10.1726 3.96217C10.7519 3.72307 11.3729 3.6 12 3.6C13.2665 3.6 14.4811 4.10129 15.3766 4.99346C16.272 5.88563 16.775 7.09559 16.775 8.35714C16.775 9.6187 16.272 10.8287 15.3766 11.7208C14.4811 12.613 13.2665 13.1143 12 13.1143ZM12 11.6952C12.8884 11.6952 13.7404 11.3436 14.3687 10.7177C14.997 10.0917 15.35 9.24258 15.35 8.35714C15.35 7.47171 14.997 6.62261 14.3687 5.99662C13.7404 5.37065 12.8884 5.01905 12 5.01905C11.1116 5.01905 10.2596 5.37065 9.63132 5.99662C9.00303 6.62261 8.65 7.47171 8.65 8.35714C8.65 9.24258 9.00303 10.0917 9.63132 10.7177C10.2596 11.3436 11.1116 11.6952 12 11.6952Z" fill="black" stroke="white" stroke-width="0.2"/>
+                                                </svg>
+                                        </span>
+                                        <span class="favorite">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9333 5.39729L12.0007 5.45888L12.0682 5.39724C14.0253 3.60788 17.0493 3.66726 18.9349 5.59079C20.8201 7.51568 20.8857 10.5814 19.1335 12.5816L11.999 19.8572L4.8662 12.5816C3.11397 10.5813 3.18054 7.51051 5.06476 5.59087C6.95213 3.66975 9.9703 3.60535 11.9333 5.39729ZM17.8741 6.67384L17.8741 6.67381C16.5614 5.33533 14.4431 5.28075 13.0688 6.53758C13.0688 6.53759 13.0688 6.5376 13.0688 6.53761L12.0015 7.51293L10.9334 6.53841C10.9334 6.53841 10.9334 6.5384 10.9334 6.53839C9.55483 5.27989 7.44081 5.33537 6.1248 6.6755C4.82188 8.00231 4.75633 10.1254 5.95697 11.5288L5.9568 11.5289L5.96155 11.5338L11.9284 17.6196L11.9998 17.6924L12.0712 17.6196L18.0381 11.5347L18.0383 11.5348L18.0427 11.5296C19.2443 10.1253 19.1786 8.00491 17.8741 6.67384Z" fill="black" stroke="white" stroke-width="0.2"/>
+                                                </svg>
+                                        </span>
+                                        <a href="#" id="cart">
+                                            <span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83333 9.26667H7.93333V9.16667V7.54762C7.93333 6.5016 8.36106 5.49781 9.1234 4.75725C9.88584 4.01659 10.9205 3.6 12 3.6C13.0795 3.6 14.1142 4.01659 14.8766 4.75725C15.6389 5.49781 16.0667 6.5016 16.0667 7.54762V9.16667V9.26667H16.1667H18.6667C18.8621 9.26667 19.0489 9.3421 19.1862 9.4755C19.3235 9.6088 19.4 9.78896 19.4 9.97619V19.6905C19.4 19.8777 19.3235 20.0579 19.1862 20.1912C19.0489 20.3246 18.8621 20.4 18.6667 20.4H5.33333C5.13792 20.4 4.95107 20.3246 4.81376 20.1912C4.67654 20.0579 4.6 19.8777 4.6 19.6905V9.97619C4.6 9.78896 4.67654 9.6088 4.81376 9.4755C4.95108 9.3421 5.13792 9.26667 5.33333 9.26667H7.83333ZM7.93333 10.7857V10.6857H7.83333H6.16667H6.06667V10.7857V18.881V18.981H6.16667H17.8333H17.9333V18.881V10.7857V10.6857H17.8333H16.1667H16.0667V10.7857V12.3048H14.6V10.7857V10.6857H14.5H9.5H9.4V10.7857V12.3048H7.93333V10.7857ZM9.4 9.16667V9.26667H9.5H14.5H14.6V9.16667V7.54762C14.6 6.87605 14.3253 6.23259 13.8374 5.75863C13.3496 5.28477 12.6886 5.01905 12 5.01905C11.3114 5.01905 10.6504 5.28477 10.1626 5.75863C9.67465 6.23259 9.4 6.87605 9.4 7.54762V9.16667Z" fill="black" stroke="white" stroke-width="0.2"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 </body>

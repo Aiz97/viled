@@ -1,0 +1,115 @@
+body {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+
+button {
+    outline: transparent;
+}
+
+button:focus {
+    outline: transparent;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav .logo {
+    display: block;
+    height: 40px;
+    width: 112px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0;
+    background-image: url("../assets/logo.svg");
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+select {
+    border: none;
+    appearance: none;
+}
+
+.language-wrapper {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.currency-wrapper {
+    cursor: pointer;
+}
+
+.categories {
+    justify-content: space-between;
+}
+
+.categories a {
+    color: #979797;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.categories a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.categories a.active {
+    color: black;
+}
+
+.categories a.active::before {
+    max-width: 8px;
+}
+
+.categories a::before {
+    left: 27%;
+    width: 100%;
+    bottom: -5px;
+    height: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    max-width: 0;
+    transform: translateX(-50%);
+    transition: max-width ease-in 100ms;
+    background-color: #000;
+}
+
+.right-side {
+    justify-content: right;
+}
+
+.options {
+    width: 132px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.options span {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.options span:last-child {
+    margin-right: 0;
+}
+
+.search-wrapper_input {
+    border: none;
+}
