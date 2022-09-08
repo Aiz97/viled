@@ -329,6 +329,48 @@ select {
     font-size: 16px;
   }
 
+  footer {
+    height: 320px;
+    padding: 40px 0;
+  }
+
+  .footer-title {
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  .about a,
+  .services a{
+    margin-bottom: 16px;
+  }
+
+  .socials-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .socials-item {
+    list-style: none;
+  }
+
+  .socials-item a{
+    margin-right: 18px;
+  }
+
+  .download {
+    text-align: right;
+  }
+
+  .download a{
+    margin-left: 16px;
+  }
+
+  .copyright {
+    position: relative;
+    bottom: -40px;
+  }
+
   @media (max-width: 768px) {
     .card {
       width: 100%;
