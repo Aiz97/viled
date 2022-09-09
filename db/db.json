@@ -1,0 +1,85 @@
+{
+    "goods": [
+        {
+            "id": 0,
+            "title": "Brunello Cucinelli",
+            "shoes": "Лоферы",
+            "price": 511900,
+            "color": "Черный",
+            "image": "../assets/shoes/1.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 1,
+            "title": "Brunello Cucinelli",
+            "shoes": "Замшевые лоферы",
+            "price": 532800,
+            "color": "Бежевый",
+            "image": "../assets/shoes/2.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 2,
+            "title": "Dolce&Gabbana",
+            "shoes": "Балетки",
+            "price": 182500,
+            "color": "Красный",
+            "image": "../assets/shoes/3.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 3,
+            "title": "Brunello Cucinelli",
+            "shoes": "Балетки",
+            "price": 351100,
+            "color": "Бежевый",
+            "image": "../assets/shoes/4.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 4,
+            "title": "Dolce&Gabbana",
+            "shoes": "Лоферы",
+            "price": 319800,
+            "color": "Черный",
+            "image": "../assets/shoes/5.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 5,
+            "title": "Brunello Cucinelli",
+            "shoes": "Замшевые лоферы",
+            "price": 421500,
+            "color": "Серый",
+            "image": "../assets/shoes/6.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 6,
+            "title": "Brunello Cucinelli",
+            "shoes": "Замшевые лоферы",
+            "price": 556400,
+            "color": "Серый",
+            "image": "../assets/shoes/7.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 7,
+            "title": "Dolce&Gabbana",
+            "shoes": "Балетки",
+            "price": 405000,
+            "color": "Черный",
+            "image": "../assets/shoes/8.jpg",
+            "category": "Лоферы"
+        },
+        {
+            "id": 8,
+            "title": "Dolce&Gabbana",
+            "shoes": "Балетки",
+            "price": 234500,
+            "color": "Бежевый",
+            "image": "../assets/shoes/9.jpg",
+            "category": "Лоферы"
+        }
+    ]
+}

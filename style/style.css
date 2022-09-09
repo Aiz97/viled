@@ -16,7 +16,7 @@ button:focus {
 }
 
 header {
-    height: 75px;
+    height: 100px;
     top: 0;
     z-index: 200;
     position: sticky;
@@ -48,7 +48,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: black;
+  color: #BB8E2B;;
 }
 
 select {
@@ -128,6 +128,8 @@ select {
 }
 
 .all-wrapper {
+    display: flex;
+    align-items: center;
     height: 46px;
     top: 0;
     z-index: 200;
@@ -139,6 +141,11 @@ select {
     padding-left: 16px;
     padding-right: 16px;
     letter-spacing: 1px;
+}
+
+.active {
+  font-weight: 600;
+  color: #BB8E2B;
 }
 
 .main-title {

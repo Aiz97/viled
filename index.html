@@ -85,24 +85,24 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="all-wrapper">
-        <div class="container">
-            <div class="all d-flex justify-content-center">
-                <a href="/" class="new">Новинки</a>
-                <a href="/" class="brands">Бренды</a>
-                <a href="/" class="clothes">Одежда</a>
-                <a href="/" class="shoes">Обувь</a>
-                <a href="/" class="bags">Сумки</a>
-                <a href="/" class="jewelry">Ювелирные Украшения</a>
-                <a href="/" class="watches">Часы</a>
-                <a href="/" class="accessories">Аксессуары</a>
-                <a href="/" class="cosmetics">Косметика</a>
-                <a href="/" class="interior">Интерьер</a>
-                <a href="/" class="sale">Выгодные Предложения</a>
+        <div class="all-wrapper">
+            <div class="container">
+                <div class="all d-flex justify-content-center">
+                    <a href="/" class="new">Новинки</a>
+                    <a href="/" class="brands">Бренды</a>
+                    <a href="/" class="clothes">Одежда</a>
+                    <a href="/" class="shoes active">Обувь</a>
+                    <a href="/" class="bags">Сумки</a>
+                    <a href="/" class="jewelry">Ювелирные Украшения</a>
+                    <a href="/" class="watches">Часы</a>
+                    <a href="/" class="accessories">Аксессуары</a>
+                    <a href="/" class="cosmetics">Косметика</a>
+                    <a href="/" class="interior">Интерьер</a>
+                    <a href="/" class="sale">Выгодные Предложения</a>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
     <main>
             <div class="main-title d-flex flex-column justify-content-around">
                 <div class="title-top d-flex justify-content-center">
@@ -172,17 +172,17 @@
                             </div>
                         </div>
                         <div class="filter-block view-filter">
-                            <a href="#view" data-toggle="collapse" aria-expanded="false" aria-controls="#view" class="filter-btn flex-column align-items-start">
+                            <a href="#kind" data-toggle="collapse" aria-expanded="false" aria-controls="#kind" class="filter-btn flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-start align-items-center">
-                                   <div class="view-filter_title menu-collapsed">
+                                   <div class="kind-filter_title menu-collapsed">
                                         Вид
                                     </div>
                                     <i id="collapse-icon" class="fas fa-angle-down ml-auto"></i>
                                 </div>
                             </a>
-                            <div id="view" class="collapse sidebar-submenu">
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="1"> Ботинки</label></div>
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="2"> Лоферы</label></div>
+                            <div id="kind" class="collapse sidebar-submenu">
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="kind[]" value="1"> Ботинки</label></div>
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="kind[]" value="2"> Лоферы</label></div>
                             </div>
                         </div>
                         <div class="filter-block color-filter">
@@ -195,11 +195,11 @@
                                 </div>
                             </a>
                             <div id="color" class="collapse sidebar-submenu">
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="1"> Белый</label></div>
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="2"> Бежевый</label></div>
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="3"> Серый</label></div>
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="4"> Красный</label></div>
-                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="shoes[]" value="5"> Черный</label></div>
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="color[0]" value="1"><span class="filter-check_checkmark"></span> Белый</label></div>
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="color[1]" value="2"> Бежевый</label></div>
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="color[2]" value="3"> Серый</label></div>
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="color[3]" value="4"> Красный</label></div>
+                                <div class="checkbox menu-collapsed"><label><input type="checkbox" name="color[4]" value="5"> Черный</label></div>
                             </div>
                         </div>
                         <div class="filter-block filter-price">
@@ -228,7 +228,7 @@
 				<div class="col-12 col-lg-9 col-xl-10">
 					<div class="container">
 						<div class="row no-gutters goods">
-                            <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-4">
 								<div class="card">
 									<div class="card-img-wrapper">
 										<span class="card-img-top"
@@ -238,7 +238,6 @@
 										<h5 class="card-title">Brunello Cucinelli</h5>
                                         <div class="card-description">Лоферы</div>
                                         <div class="card-price">511 900 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -252,7 +251,6 @@
 										<h5 class="card-title">Brunello Cucinelli</h5>
                                         <div class="card-description">Замшевые лоферы</div>
                                         <div class="card-price">532 800 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -266,7 +264,6 @@
 										<h5 class="card-title">Dolce&Gabbana</h5>
                                         <div class="card-description">Балетки</div>
                                         <div class="card-price">182 500 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -280,7 +277,6 @@
 										<h5 class="card-title">Brunello Cucinelli</h5>
                                         <div class="card-description">Балетки</div>
                                         <div class="card-price">351 100 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -294,7 +290,6 @@
 										<h5 class="card-title">Dolce&Gabbana</h5>
                                         <div class="card-description">Лоферы</div>
                                         <div class="card-price">319 800 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -308,7 +303,6 @@
 										<h5 class="card-title">Brunello Cucinelli</h5>
                                         <div class="card-description">Замшевые лоферы</div>
                                         <div class="card-price">421 500 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -322,7 +316,6 @@
 										<h5 class="card-title">Brunello Cucinelli</h5>
                                         <div class="card-description">Замшевые лоферы</div>
                                         <div class="card-price">556 400 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -336,7 +329,6 @@
 										<h5 class="card-title">Dolce&Gabbana</h5>
                                         <div class="card-description">Балетки</div>
                                         <div class="card-price">405 000 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
 							</div>
@@ -350,10 +342,9 @@
 										<h5 class="card-title">Dolce&Gabbana</h5>
                                         <div class="card-description">Лоферы</div>
                                         <div class="card-price">234 500 ₸</div>
-										<!-- <button class="btn btn-primary">В корзину</button> -->
 									</div>
 								</div>
-							</div>
+							</div> -->
                         </div>
 					</div>
 
