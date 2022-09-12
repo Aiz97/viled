@@ -11,7 +11,7 @@ const renderGoods = (goods) =>{
 			<div class="card" data-key="${goodsItem.id}">
 				<div class="card-img-wrapper">
 					<span class="card-img-top"
-						style="background-image: url('${goodsItem.img}')"></span>
+						style="background-image: url('${goodsItem.image}')"></span>
 				</div>
 				<div class="card-body justify-content-between">
 					<h5 class="card-title">${goodsItem.title}</h5>

@@ -24,22 +24,27 @@ export const filterPrice = (goods, min, max) => {
     })
 }
 
-export const colorFilter = (goods, value) => {
-    return goods.filter((goodsItem) => {
-        if(value) {
-            return goodsItem.color === true
-        } else {
-            return goodsItem
-        }
-    })
+export const filterColor = (goods, array) => {
+    return goods.filter(
+        // (goodsItem) => {
+        // for  (let i = 0; i < array.length; i++) {
+        //     // return goodsItem[i].title === array[i];
+        //     return goodsItem.title.includes(array[i]);
+        // }
+       ({ color }) =>
+        array.some(a => color.startsWith(a))
+    );
 }
 
-export const brandFilter = (goods, value) => {
-    return goods.filter((goodsItem) => {
-        if(value) {
-            return goodsItem.title === true
-        } else {
-            return goodsItem
-        }
-    })
+
+export const filterBrand = (goods, array) => {
+    return goods.filter(
+        // (goodsItem) => {
+        // for  (let i = 0; i < array.length; i++) {
+        //     // return goodsItem[i].title === array[i];
+        //     return goodsItem.title.includes(array[i]);
+        // }
+       ({ title }) =>
+        array.some(a => title.startsWith(a))
+    );
 }

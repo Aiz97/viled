@@ -8,12 +8,12 @@ const priceFilter = () => {
 
     minInput.addEventListener('input', () => {
         getData().then((data) => {
-            renderGoods(filterPrice(minInput.value, maxInput.value));
+            renderGoods(filterPrice(data, minInput.value, maxInput.value));
         })
     })
     maxInput.addEventListener('input', () => {
         getData().then((data) => {
-            renderGoods(filterPrice(minInput.value, maxInput.value));
+            renderGoods(filterPrice(data, minInput.value, maxInput.value));
         })
     })
 

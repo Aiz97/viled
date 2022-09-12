@@ -195,6 +195,7 @@ select {
   label {
     display: inline-block;
     margin-bottom: 20px;
+    margin-left: 16px;
   }
 
   .sidebar-expanded {
@@ -309,10 +310,10 @@ select {
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 169px;
+    left: 13px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     background: #fff;
     border: 1px solid #005bff;
     border-radius: 2px;
