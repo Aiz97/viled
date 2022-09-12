@@ -216,6 +216,16 @@ select {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
+  .filter-search-wrapper_input {
+    padding: 8px;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .checkbox {
+    margin-left: -15px;
+  }
 
   .filter-price_range {
     display: -webkit-box;
@@ -268,70 +278,6 @@ select {
             box-sizing: border-box;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-
-  .filter-check {
-    font-weight: 500;
-  }
-
-  .filter-check_label {
-    display: block;
-    min-height: 16px;
-    position: relative;
-    padding-left: 21px;
-    color: #4d5f71;
-    font-size: 14px;
-    line-height: 19px;
-    cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-
-  .filter-check_label-text {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 100%;
-    margin-top: 1px;
-  }
-
-  .filter-check_label .active {
-    font-weight: 700;
-  }
-
-  .filter-check_checkbox {
-    opacity: 0;
-    position: absolute;
-    cursor: pointer;
-  }
-
-  .filter-check_checkmark {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 169px;
-    left: 13px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #005bff;
-    border-radius: 2px;
-  }
-
-  .filter-check_checkmark.checked::after {
-    display: block;
-  }
-
-  .filter-check_checkmark:after {
-    display: none;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: -4px;
-    left: 2px;
-    content: "";
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 15 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.3 15L15 1.2 13.7 0 5.1 12.3 1.1 8 0 9.4 5.3 15z' fill='%23005bff'/%3E%3C/svg%3E");
   }
 
   .card {

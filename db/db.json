@@ -3,6 +3,7 @@
         {
             "id": 0,
             "title": "Brunello Cucinelli",
+            "description": "Лоферы",
             "shoes": "Лоферы",
             "price": 511900,
             "color": "Черный",
@@ -12,7 +13,8 @@
         {
             "id": 1,
             "title": "Brunello Cucinelli",
-            "shoes": "Замшевые лоферы",
+            "description": "Замшевые kоферы",
+            "shoes": "Замшевые Лоферы",
             "price": 532800,
             "color": "Бежевый",
             "image": "../assets/shoes/2.jpg",
@@ -21,6 +23,7 @@
         {
             "id": 2,
             "title": "Dolce&Gabbana",
+            "description": "Балетки",
             "shoes": "Балетки",
             "price": 182500,
             "color": "Красный",
@@ -30,6 +33,7 @@
         {
             "id": 3,
             "title": "Brunello Cucinelli",
+            "description": "Балетки",
             "shoes": "Балетки",
             "price": 351100,
             "color": "Бежевый",
@@ -39,6 +43,7 @@
         {
             "id": 4,
             "title": "Dolce&Gabbana",
+            "description": "Лоферы",
             "shoes": "Лоферы",
             "price": 319800,
             "color": "Черный",
@@ -48,7 +53,8 @@
         {
             "id": 5,
             "title": "Brunello Cucinelli",
-            "shoes": "Замшевые лоферы",
+            "description": "Замшевые лоферы",
+            "shoes": "Лоферы",
             "price": 421500,
             "color": "Серый",
             "image": "../assets/shoes/6.jpg",
@@ -57,7 +63,8 @@
         {
             "id": 6,
             "title": "Brunello Cucinelli",
-            "shoes": "Замшевые лоферы",
+            "description": "Замшевые лоферы",
+            "shoes": "Лоферы",
             "price": 556400,
             "color": "Серый",
             "image": "../assets/shoes/7.jpg",
@@ -66,6 +73,7 @@
         {
             "id": 7,
             "title": "Dolce&Gabbana",
+            "description": "Балетки",
             "shoes": "Балетки",
             "price": 405000,
             "color": "Черный",
@@ -75,6 +83,7 @@
         {
             "id": 8,
             "title": "Dolce&Gabbana",
+            "description": "Балетки",
             "shoes": "Балетки",
             "price": 234500,
             "color": "Бежевый",

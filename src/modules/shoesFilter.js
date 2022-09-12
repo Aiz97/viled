@@ -2,17 +2,19 @@ import getData from "./getData";
 import renderGoods from "./renderGoods";
 import { filters, filterGoods } from "./filters";
 
-const colorFilter = () => {
 
-    $('input:checkbox[name=color]').on('change', function() {
+const shoesFilter = () => {
+
+    $('input:checkbox[name=shoes]').on('change', function() {
         const array = [];
-        $("input:checkbox[name=color]:checked").each(function(){
+        $("input:checkbox[name=shoes]:checked").each(function(){
             array.push($(this).val());
-            filters.filterColor = array;
+            filters.filterShoes = array;
             getData().then((data) => {
                 renderGoods(filterGoods(data));
             })
         })
     })
+
 }
-export default colorFilter
+export default shoesFilter

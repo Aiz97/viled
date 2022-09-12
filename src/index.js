@@ -5,6 +5,8 @@ import search from "./modules/search";
 import priceFilter from "./modules/priceFilter";
 import brandFilter from "./modules/brandFilter";
 import colorFilter from "./modules/colorFilter";
+import shoesFilter from "./modules/shoesFilter";
+import sort from "./modules/sort";
 
 collapse()
 cart()
@@ -13,3 +15,5 @@ search()
 priceFilter()
 brandFilter()
 colorFilter()
+shoesFilter()
+sort()

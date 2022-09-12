@@ -15,7 +15,7 @@ const renderGoods = (goods) =>{
 				</div>
 				<div class="card-body justify-content-between">
 					<h5 class="card-title">${goodsItem.title}</h5>
-                    <div class="card-description">${goodsItem.shoes}</div>
+                    <div class="card-description">${goodsItem.description}</div>
                     <div class="card-price">${goodsItem.price} ₸</div>
 				</div>
 			</div>

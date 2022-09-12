@@ -1,16 +1,31 @@
-export const searchFilter = (goods, value) => {
+export const filters = {
+    searchFilter: null,
+    categoryFilter: null,
+    filterPrice: {min: null, max: null},
+    filterColor: [],
+    filterShoes: [],
+    filterBrand: [],
+}
+
+
+
+export const filterGoods = (goods) =>{
+    let filteredGoods = [...goods];
+    if (filters.searchFilter) filteredGoods = searchFilter(filteredGoods, filters.searchFilter)
+    if (filters.categoryFilter) filteredGoods = categoryFilter(filteredGoods, filters.categoryFilter)
+    if (filters.filterPrice.min != null && filters.filterPrice.max != null || filters.filterPrice.min != null && filters.filterPrice.max == null || filters.filterPrice.min == null && filters.filterPrice.max != null) filteredGoods = filterPrice(filteredGoods, filters.filterPrice.min, filters.filterPrice.max)
+    if (filters.filterColor.length) filteredGoods = filterColor(filteredGoods, filters.filterColor)
+    if (filters.filterShoes.length) filteredGoods = filterShoes(filteredGoods, filters.filterShoes)
+    if (filters.filterBrand.length) filteredGoods = filterBrand(filteredGoods, filters.filterBrand)
+    return filteredGoods
+}
+ const searchFilter = (goods, value) => {
     return goods.filter((goodsItem) => {
         return goodsItem.title.toLowerCase().includes(value.toLowerCase())
     })
 }
 
-export const categoryFilter = (goods, value) => {
-    return goods.filter((goodsItem) => {
-        return goodsItem.category === value
-    })
-}
-
-export const filterPrice = (goods, min, max) => {
+ const filterPrice = (goods, min, max) => {
     return goods.filter((goodsItem) => {
         if (min === '' && max === '') {
             return goodsItem
@@ -24,27 +39,28 @@ export const filterPrice = (goods, min, max) => {
     })
 }
 
-export const filterColor = (goods, array) => {
+ const filterColor = (goods, array) => {
     return goods.filter(
-        // (goodsItem) => {
-        // for  (let i = 0; i < array.length; i++) {
-        //     // return goodsItem[i].title === array[i];
-        //     return goodsItem.title.includes(array[i]);
-        // }
        ({ color }) =>
         array.some(a => color.startsWith(a))
     );
 }
 
-
-export const filterBrand = (goods, array) => {
+ const filterShoes = (goods, array) => {
     return goods.filter(
-        // (goodsItem) => {
-        // for  (let i = 0; i < array.length; i++) {
-        //     // return goodsItem[i].title === array[i];
-        //     return goodsItem.title.includes(array[i]);
-        // }
+       ({ shoes }) =>
+        array.some(a => shoes.startsWith(a))
+    );
+}
+
+
+ const filterBrand = (goods, array) => {
+    return goods.filter(
        ({ title }) =>
         array.some(a => title.startsWith(a))
     );
+}
+
+export const sortGoods = (goods) => {
+    return goods.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
 }

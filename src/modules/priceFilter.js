@@ -1,19 +1,21 @@
 import getData from "./getData";
 import renderGoods from "./renderGoods";
-import { filterPrice } from "./filters";
+import { filters, filterGoods } from "./filters";
 
 const priceFilter = () => {
     const minInput = document.getElementById('min')
     const maxInput = document.getElementById('max')
 
     minInput.addEventListener('input', () => {
+        filters.filterPrice.min = minInput.value;
         getData().then((data) => {
-            renderGoods(filterPrice(data, minInput.value, maxInput.value));
+            renderGoods(filterGoods(data));
         })
     })
     maxInput.addEventListener('input', () => {
+        filters.filterPrice.max = maxInput.value;
         getData().then((data) => {
-            renderGoods(filterPrice(data, minInput.value, maxInput.value));
+            renderGoods(filterGoods(data));
         })
     })
 
