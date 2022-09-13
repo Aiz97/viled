@@ -52,12 +52,15 @@ a:hover {
 }
 
 .ru {
+  display: flex;
+  align-items: center;
   margin-right: 50px;
 }
 
 .ru img {
   width: 24px;
   height: 24px;
+  margin-right: 8px;
 }
 
 .categories {
@@ -163,7 +166,37 @@ a:hover {
 }
 
 .sort {
-    text-align: right;
+  text-align: right;
+}
+
+.sort-by {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 46px;
+  border: 1px solid black;
+  width: 184px;
+  align-items: start;
+  z-index: 10;
+  background-color: white;
+  top: 282px;
+}
+
+.hide {
+  display: none;
+}
+
+.price-ascending,
+.price-descending {
+  padding: 4px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.price-ascending:hover,
+.price-descending:hover {
+  background-color: #999;
 }
 
 .goods {
@@ -303,7 +336,16 @@ a:hover {
     margin-left: auto;
   }
   .page-block a {
+    color: #979797;
     font-size: 16px;
+  }
+
+  .page-block a:hover {
+    color: black;
+  }
+
+  .page-block a.active {
+    color: black;
   }
 
   footer {

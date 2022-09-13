@@ -1,9 +1,9 @@
 const renderGoods = (goods) =>{
-    const goodsWrapper = document.querySelector('.goods')
+    const goodsWrapper = document.querySelector('.goods');
 
-    localStorage.setItem('goods', JSON.stringify(goods))
+    localStorage.setItem('goods', JSON.stringify(goods));
 
-    goodsWrapper.innerHTML = ''
+    goodsWrapper.innerHTML = '';
 
     goods.forEach((goodsItem) => {
         goodsWrapper.insertAdjacentHTML('beforeend', `

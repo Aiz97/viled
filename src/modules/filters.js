@@ -61,14 +61,14 @@ const filterBrand = (goods, array) => {
     );
 }
 
-export const sortGoods = (goods) => {
+export const sortGoodsAscending = (goods) => {
     return goods.sort((a, b) => {
-        if (a.price > b.price) {
-          return 1;
-        } else if (b.price > a.price) {
-          return -1;
-        } else {
-          return 0;
-        }
+        return +a.price - +b.price
+    })
+}
+
+export const sortGoodsDescending = (goods) => {
+    return goods.sort((a, b) => {
+        return +b.price - +a.price
     })
 }
