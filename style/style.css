@@ -8,38 +8,38 @@ body {
 }
 
 button {
-    outline: transparent;
+  outline: transparent;
 }
 
 button:focus {
-    outline: transparent;
+  outline: transparent;
 }
 
 header {
-    height: 100px;
-    top: 0;
-    z-index: 200;
-    position: sticky;
-    background-color: white;
+  height: 100px;
+  top: 0;
+  z-index: 200;
+  position: sticky;
+  background-color: white;
 }
 
 .container {
-    max-width: 1280px;
-    width: 100%;
+  max-width: 1280px;
+  width: 100%;
 }
 
 nav {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 nav .logo {
-    display: block;
-    height: 40px;
-    width: 112px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0;
-    background-image: url("../assets/logo.svg");
+  display: block;
+  height: 40px;
+  width: 112px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0;
+  background-image: url("../assets/logo.svg");
 }
 
 a {
@@ -51,96 +51,90 @@ a:hover {
   color: #BB8E2B;;
 }
 
-select {
-    border: none;
-    appearance: none;
-    background-color: white;
+.ru {
+  margin-right: 50px;
 }
 
-.language-wrapper {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.currency-wrapper {
-    cursor: pointer;
+.ru img {
+  width: 24px;
+  height: 24px;
 }
 
 .categories {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .categories a {
-    color: #979797;
-    margin-right: 20px;
-    cursor: pointer;
+  color: #979797;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 .categories a:hover {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .categories a.active {
-    color: black;
+  font-weight: 400;
+  color: black;
 }
 
 .categories a.active::before {
-    max-width: 8px;
+  max-width: 15px;
 }
 
 .categories a::before {
-    left: 27%;
-    width: 100%;
-    bottom: -5px;
-    height: 2px;
-    content: "";
-    display: block;
-    position: absolute;
-    max-width: 0;
-    transform: translateX(-50%);
-    transition: max-width ease-in 100ms;
-    background-color: #000;
+  left: 34%;
+  width: 15px;
+  bottom: -5px;
+  height: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+  max-width: 0;
+  transform: translateX(-50%);
+  transition: max-width ease-in 100ms;
+  background-color: #000;
 }
 
 .right-side {
-    justify-content: right;
+  justify-content: right;
 }
 
 .options {
-    width: 132px;
-    display: flex;
-    flex-wrap: nowrap;
+  width: 132px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .options span {
-    margin-right: 12px;
-    cursor: pointer;
+  margin-right: 12px;
+  cursor: pointer;
 }
 
 .options span:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .search-wrapper_input {
-    border: none;
+  border: none;
 }
 
 .all-wrapper {
-    display: flex;
-    align-items: center;
-    height: 46px;
-    top: 0;
-    z-index: 200;
-    position: sticky;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  height: 46px;
+  top: 0;
+  z-index: 200;
+  position: sticky;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .all a{
-    padding-left: 16px;
-    padding-right: 16px;
-    letter-spacing: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+  letter-spacing: 1px;
 }
 
 .active {
@@ -149,23 +143,23 @@ select {
 }
 
 .main-title {
-    height: 134px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  height: 134px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .title {
-    text-align: center;
-    font-size: 28px;
+  text-align: center;
+  font-size: 28px;
 }
 
 .prev {
-    position: absolute;
-    left: 140px;
+  position: absolute;
+  left: 140px;
 }
 
 .sort-wrapper {
-    height: 36px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  height: 36px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .sort {
@@ -216,7 +210,8 @@ select {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  .filter-search-wrapper_input {
+  .brands-search-wrapper_input,
+  .shoes-search-wrapper_input {
     padding: 8px;
     height: 36px;
     margin-bottom: 20px;

@@ -1,5 +1,4 @@
 import collapse from "./modules/collapse";
-import cart from "./modules/cart";
 import load from "./modules/load";
 import search from "./modules/search";
 import priceFilter from "./modules/priceFilter";
@@ -9,7 +8,6 @@ import shoesFilter from "./modules/shoesFilter";
 import sort from "./modules/sort";
 
 collapse()
-cart()
 load()
 search()
 priceFilter()

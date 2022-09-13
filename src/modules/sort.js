@@ -4,7 +4,6 @@ import { sortGoods } from "./filters";
 
 const sort = () => {
     const sortBtn = document.querySelector('.sort-cards');
-
     sortBtn.addEventListener('click', () => {
         getData().then((data) => {
             renderGoods(sortGoods(data));

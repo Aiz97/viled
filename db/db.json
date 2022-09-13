@@ -13,8 +13,8 @@
         {
             "id": 1,
             "title": "Brunello Cucinelli",
-            "description": "Замшевые kоферы",
-            "shoes": "Замшевые Лоферы",
+            "description": "Замшевые лоферы",
+            "shoes": "Лоферы",
             "price": 532800,
             "color": "Бежевый",
             "image": "../assets/shoes/2.jpg",

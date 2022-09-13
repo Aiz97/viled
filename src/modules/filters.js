@@ -25,7 +25,7 @@ export const filterGoods = (goods) =>{
     })
 }
 
- const filterPrice = (goods, min, max) => {
+const filterPrice = (goods, min, max) => {
     return goods.filter((goodsItem) => {
         if (min === '' && max === '') {
             return goodsItem
@@ -39,14 +39,14 @@ export const filterGoods = (goods) =>{
     })
 }
 
- const filterColor = (goods, array) => {
+const filterColor = (goods, array) => {
     return goods.filter(
        ({ color }) =>
         array.some(a => color.startsWith(a))
     );
 }
 
- const filterShoes = (goods, array) => {
+const filterShoes = (goods, array) => {
     return goods.filter(
        ({ shoes }) =>
         array.some(a => shoes.startsWith(a))
@@ -54,7 +54,7 @@ export const filterGoods = (goods) =>{
 }
 
 
- const filterBrand = (goods, array) => {
+const filterBrand = (goods, array) => {
     return goods.filter(
        ({ title }) =>
         array.some(a => title.startsWith(a))
@@ -62,5 +62,13 @@ export const filterGoods = (goods) =>{
 }
 
 export const sortGoods = (goods) => {
-    return goods.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+    return goods.sort((a, b) => {
+        if (a.price > b.price) {
+          return 1;
+        } else if (b.price > a.price) {
+          return -1;
+        } else {
+          return 0;
+        }
+    })
 }
