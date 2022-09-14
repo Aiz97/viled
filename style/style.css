@@ -199,6 +199,26 @@ a:hover {
   background-color: #999;
 }
 
+#filterContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#filterContent span {
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  background: #fbfbfb;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#filterContent span span {
+  margin-bottom: 0;
+}
+
 .goods {
   margin-bottom: 100px;
 }

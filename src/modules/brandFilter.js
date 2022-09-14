@@ -14,6 +14,5 @@ const brandFilter = () => {
             })
         })
     })
-
 }
 export default brandFilter

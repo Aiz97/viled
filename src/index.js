@@ -6,6 +6,7 @@ import brandFilter from "./modules/brandFilter";
 import colorFilter from "./modules/colorFilter";
 import shoesFilter from "./modules/shoesFilter";
 import sort from "./modules/sort";
+import brandTags from "./modules/tags";
 
 collapse()
 load()
@@ -15,3 +16,4 @@ brandFilter()
 colorFilter()
 shoesFilter()
 sort()
+brandTags()
