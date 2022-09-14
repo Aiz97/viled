@@ -8,7 +8,7 @@ const brandTags = () => {
         checkboxes[i].addEventListener('click',function(){
             if(this.checked && this.getAttribute('type')=='checkbox'){
                 const span = document.createElement('span');
-                span.innerHTML = '<span>' + checkboxes[i].value + '</span>' + '<img src="/assets/icons/close.svg">' + '</img>';
+                span.innerHTML = '<span>' + checkboxes[i].value + '</span>' + '<img src="./assets/icons/close.svg">' + '</img>';
                 filterContent.appendChild(span);
                 for(let j=0; j < filterChildren.length; j++){
                     filterChildren[j].addEventListener('click', function setCheck(){
